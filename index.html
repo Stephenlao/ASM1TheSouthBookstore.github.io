@@ -1,0 +1,441 @@
+<!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Lao Vinh Khang
+  ID: s3891925
+  Acknowledgement: Acknowledge the resources that you use here -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The South Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<!-- In the head, the header, main-homepage, general and footer.css are attached in homepage.html
+  I am using Roboto weight 'light 300' ,'regular 400' and 'medium 500' from google font -->
+
+<body>
+    <!-- In term of body section, I have seperated four main part, 1. 'mobile-nav-bar', 2. left-side,
+      3. middle-side and 4. right-side.  -->
+    <header>
+        <div class="header">
+            <div class="mobile-nav-bar">☰</div>
+            <!-- The 'mobile-nav-bar' using hamburger menu for mobile version -->
+            <!-- This nav bar is used for the mobile version  -->
+            <div class="nav-bar">
+                <ul>
+                    <li><a class="feature" href="index.html">Home</a></li>
+                    <li><a class="feature" href="category(non-fiction).html">Non fiction books </a></li>
+                    <li><a class="feature" href="category(children).html">Children books</a></li>
+                    <li><a class="feature" href="category(fiction).html">Fiction books</a></li>
+                </ul>
+            </div>
+
+            <!-- The left side of header, logo of 'The south bookstore' is attached -->
+            <div class="left-side">
+                <a href="index.html"><img class="bookstore-logo" src="img/bookstore-logo_preview_rev_1.png"
+                        alt="bookstore-logo">
+                </a>
+            </div>
+
+            <!-- The middle side contains search box, inside the search box we have 2
+              small parts 'search bar' and 'search button'. Search bar creates just like
+              bar for users typing, search icon is the magnifying i attached in google  -->
+
+            <div class="middle-side">
+                <div class="search-box">
+                    <input class="search-bar" type="text" placeholder="Search by author, title, name">
+                    <button class="search-button">
+                        <img class="search-icon" src="img/search-interface-symbol.png" alt="search-icon">
+                    </button>
+                </div>
+
+                <!-- The right side has 3 icons 'heart','shopping-cart' and 'user-account' -->
+            </div>
+            <div class="right-side">
+                <img class="notification-icon" src="img/2_preview_rev_1.png" alt="heart-icon">
+
+                <img class="shopping-cart-icon" src="img/3_preview_rev_1.png" alt="shopping-cart-icon">
+
+                <img class="user-acc-icon" src="img/4_preview_rev_1.png" alt="user-account-icon">
+            </div>
+
+
+            <!-- This nav-bar is shown in desktop version  -->
+
+        </div>
+
+    </header>
+
+    <div class="nav-bar1">
+        <ul>
+            <li><a class="feature1" href="index.html">Home</a></li>
+            <li><a class="feature1" href="category(non-fiction).html">Non fiction books </a></li>
+            <li><a class="feature1" href="category(children).html">Children books</a></li>
+            <li><a class="feature1" href="category(fiction).html">Fiction books</a></li>
+        </ul>
+    </div>
+
+
+    <div class="bookstore-banner">
+        <img class="bookstore-banner-img" src="img/banner-3.png" alt="bookstore-banner">
+    </div>
+
+    <!-- This is title for each categories has the same class 'category name'      -->
+    <a class="category-name-anchor" href="category(non-fiction).html">
+        <h1 class="category-name">Non-fiction books</h1>
+    </a>
+    <!-- 'Category-container' covers all informations include images, contents -->
+    <div class="category-container">
+        <!-- 'book-container' covers book position, book content in  'category-container' -->
+        <a class="book-detail-page-link" href="elon-musk.html">
+            <div class="book-container">
+                <div class="book-pos">
+                    <img class="elon-musk-img" src="img/elon-musk-book.jpg"
+                        alt="elon-musk-book">
+                </div>
+                <div class="book-content">
+                    <h1 class="book-title">Elon Musk: How the Billionare CEO <br> of SpaceX and Tesla
+                        is shaping our future</h1>
+                    <hr>
+                    <div class="book-info">
+                        <div>
+                            <p class="author">Author</p>
+                            <p class="author-name">Ashlee Vance </p>
+                        </div>
+    
+                        <div>
+                            <p class="rating">Rating</p>
+                            <div class="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </a>
+
+        <a class="book-detail-page-link" href="driver-of-life-times.html">
+            <div class="book-container">
+                <div class="book-pos">
+                    <img class="driver-life-time-img" src="img/drivers-of-life-time_preview_rev_1.png"
+                        alt="drivers-of-life-time-book">
+                </div>
+                <div class="book-content">
+                    <h1 class="book-title">Drives Of A Lifetime 2nd Edition: <br> 500 Of The World's Greatest Road Trips
+                    </h1>
+                    <hr>
+                    <div class="book-info">
+                        <div>
+                            <p class="author">Author</p>
+                            <p class="author-name"> National Geographic </p>
+                        </div>
+    
+                        <div>
+                            <p class="rating">Rating</p>
+                            <div class="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/half-star.png" alt="star">
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+            
+        </a>
+        
+        <a class= "book-detail-page-link" href="cooking-japanese.html">
+            <div class="book-container">
+                <div class="book-pos">
+                    <img class="cooking-w-japanese-img" src="img/cooking-japanese.png"
+                        alt="cooking-with-japanese-book">
+                </div>
+                <div class="book-content">
+                    <h1 class="book-title">Cooking With Japanese Pickles: <br> 97 Quick, Classic And Seasonal Recipes</h1>
+                    <hr>
+                    <div class="book-info">
+                        <div>
+                            <p class="author">Author</p>
+                            <p class="author-name">Takako Yokoyama </p>
+                        </div>
+    
+                        <div>
+                            <p class="rating">Rating</p>
+                            <div class="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+        </div>
+    
+        </a>
+        
+    <!-- this is the title for children book -->
+    <a class="category-name-anchor" href="category(children).html">
+        <h1 class="category-name">Children's books</h1>
+    </a>
+    <div class="category-container">
+        <a class="book-detail-page-link" href="dory-fantasmagory.html">
+            <div class="book-container">
+                <div class="book-pos">
+                    <img class="dory-img" src="img/dory-fantasmagory.jpeg" alt="dory-book">
+                </div>
+                <div class="book-content">
+                    <h1 class="book-title">Dory Fantasmagory</h1>
+                    <hr>
+                    <div class="book-info">
+                        <div>
+                            <p class="author">Author</p>
+                            <p class="author-name">Abby Hanlon</p>
+                        </div>
+    
+                        <div>
+                            <p class="rating">Rating</p>
+                            <div class="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+        </a>
+
+        <a class="book-detail-page-link" href="roahd-dalhe.html">
+            <div class="book-container">
+                <div class="book-pos">
+                    <img class="charlie-chocolate-img" src="img/roahld-dahle_preview_rev_1.png"
+                        alt="charlie-chocolate-book">
+                </div>
+                <div class="book-content">
+                    <h1 class="book-title">Charlie and the Chocolate Factory (2007)</h1>
+                    <hr>
+                    <div class="book-info">
+                        <div>
+                            <p class="author">Author</p>
+                            <p class="author-name"> Roald Dahl</p>
+                        </div>
+    
+                        <div>
+                            <p class="rating">Rating</p>
+                            <div class="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+        </a>
+        
+        
+        <a class="book-detail-page-link" href="place-called-perfect.html">
+            <div class="book-container">
+                <div class="book-pos">
+                    <img class="placed-perfect-img"
+                        src="img/place-called-perfect_preview_rev_1.png"
+                        alt="place-called-perfect-book">
+                </div>
+                <div class="book-content">
+                    <h1 class="book-title">A Place Called Perfect</h1>
+                    <hr>
+                    <div class="book-info">
+                        <div>
+                            <p class="author">Author</p>
+                            <p class="author-name"> Helena Duggan </p>
+                        </div>
+    
+                        <div>
+                            <p class="rating">Rating</p>
+                            <div class="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+        </a>
+        
+    <!-- This is the tiltle for fiction book -->
+    <a class="category-name-anchor" href="category(fiction).html">
+        <h1 class="category-name">Fiction books</h1>
+    </a>
+    <div class="category-container">
+        <a class="book-detail-page-link" href="chemical-heart.html">
+            <div class="book-container">
+                <div class="book-pos">
+                    <img class="chemical-heart-img" src="img/chemical-heart_preview_rev_1.png"
+                        alt="chemical-heart-book">
+                </div>
+                <div class="book-content">
+                    <h1 class="book-title">Chemical Hearts</h1>
+                    <hr>
+                    <div class="book-info">
+                        <div>
+                            <p class="author">Author</p>
+                            <p class="author-name"> Krystal Sutherland</p>
+                        </div>
+    
+                        <div>
+                            <p class="rating">Rating</p>
+                            <div class="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+        </a>
+
+        <a class="book-detail-page-link" href="sleep-in-sea-of-star.html">
+            <div class="book-container">
+                <div class="book-pos">
+                    <img class="sea-img" src="img/to-sleep-in-a-sea-of-star_preview_rev_1.png"
+                        alt="to-live-in-a-sea-book">
+                </div>
+                <div class="book-content">
+                    <h1 class="book-title">To Sleep In A Sea Of Stars</h1>
+                    <hr>
+                    <div class="book-info">
+                        <div>
+                            <p class="author">Author</p>
+                            <p class="author-name">Christopher Paolini</p>
+                        </div>
+    
+                        <div>
+                            <p class="rating">Rating</p>
+                            <div class="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </a>
+        
+        <a class="book-detail-page-link" href="black-leopard.html">
+            <div class="book-container">
+                <div class="book-pos">
+                    <img class="black-leopard-img" src="img/black-leopard_preview_rev_1.png"
+                        alt="black-leopard-book">
+                </div>
+                <div class="book-content">
+                    <h1 class="book-title">Black Leopard, Red Wolf: <br> Dark Star Trilogy Book 1</h1>
+                    <hr>
+                    <div class="book-info">
+                        <div>
+                            <p class="author">Author</p>
+                            <p class="author-name"> Marlon James</p>
+                        </div>
+    
+                        <div>
+                            <p class="rating">Rating</p>
+                            <div class="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+                                <img src="img/star (1).png" alt="star">
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        
+    </div>
+    <div class="rich-media">
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/SKVcQnyEIT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/kul-g_30HuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+
+    <!-- Footer section using using ul tag to put it in list  -->
+    <footer>
+        <nav>
+            <ul>
+                <li> About us</li>
+                <li>Privacy Policy</li>
+                <li>Term</li>
+                <li>Copy right</li>
+                <a href="contact-page.html"><li>Contact us</li></a>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

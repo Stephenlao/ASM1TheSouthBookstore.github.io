@@ -1,0 +1,415 @@
+<!--RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Lao Vinh Khang
+  ID: s3891925
+  Acknowledgement: Acknowledge the resources that you use here -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children books category</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- In term of body section, I have seperated four main part, 1. 'mobile-nav-bar', 2. left-side,
+    3. middle-side and 4. right-side.  -->
+    <header>
+        <div class="header">
+            <div class="mobile-nav-bar">☰</div>
+            <!-- The 'mobile-nav-bar' using hamburger menu for mobile version -->
+            <!-- This nav bar is used for the mobile version  -->
+            <div class="nav-bar">
+                <ul>
+                    <li><a class="feature" href="index.html">Home</a></li>
+                    <li><a class="feature" href="category(non-fiction).html">Non fiction books </a></li>
+                    <li><a class="feature" href="category(children).html">Children books</a></li>
+                    <li><a class="feature" href="category(fiction).html">Fiction books</a></li>
+                </ul>
+            </div>
+
+            <!-- The left side of header, logo of 'The south bookstore' is attached -->
+            <div class="left-side">
+                <a href="index.html"><img class="bookstore-logo" src="img/bookstore-logo_preview_rev_1.png" alt="bookstore-logo">
+                </a>            
+            </div>
+
+            <!-- The middle side contains search box, inside the search box we have 2
+            small parts 'search bar' and 'search button'. Search bar creates just like
+            bar for users typing, search icon is the magnifying i attached in google  -->
+
+            <div class="middle-side">
+                <div class="search-box">
+                    <input class="search-bar" type="text" placeholder="Search by author, title, name">
+                    <button class="search-button">
+                        <img class="search-icon" src="img/search-interface-symbol.png" alt="search-icon">
+                    </button>
+                </div>
+            
+            <!-- The right side has 3 icons 'notification','shopping-cart' and 'user-account' -->
+            </div>
+            <div class="right-side">
+                    <img class="notification-icon" src="img/2_preview_rev_1.png" alt="notification-icon">
+    
+                    <img class="shopping-cart-icon" src="img/3_preview_rev_1.png" alt="shopping-cart-icon">
+    
+                    <img class="user-acc-icon" src="img/4_preview_rev_1.png" alt="user-account-icon">
+            </div>
+    
+            
+            <!-- This nav-bar is shown in desktop version  -->
+               
+
+           
+        </div>
+    </header>
+
+    <div class="nav-bar1">
+        <ul>
+            <li><a class="feature1" href="index.html">Home</a></li>
+            <li><a class="feature1" href="category(non-fiction).html">Non fiction books </a></li>
+            <li><a class="feature1" href="category(children).html">Children books</a></li>
+            <li><a class="feature1" href="category(fiction).html">Fiction books</a></li>
+        </ul>
+    </div>
+
+
+    <!-- This is title for each categories has the same class 'category name'      -->
+<a class="category-name-anchor" href="category(children).html"><h1 class="category-name">Chapter Books</h1></a>
+<!-- 'Non-fiction-container' covers all informations include images, contents within this category -->
+<div class="category-container">
+    <a class="book-detail-page-link" href="alice-adventure.html">
+        <div class="book-container">
+            <div class="book-pos">
+                <img class="alice-adventure-img" src="img/alice's-adventure.jpeg" alt="alice-adventure-book">
+            </div>
+            <div class="book-content">
+                <h1 class="book-title">Alice's Adventures in Wonderland</h1>
+                <hr>
+                <div class="book-info">
+                    <div>
+                        <p class="author">Author</p>
+                        <p class="author-name">Lewis Carroll</p>
+                    </div>
+    
+                    <div>
+                        <p class="rating">Rating</p>
+                        <div class="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    </a>
+    
+    <a class="book-detail-page-link" href="diary-wimpy.html">
+        <div class="book-container">
+            <div class="book-pos">
+                <img class="diary-wimpy-img" src="img/diary-wimpy.png" alt="diary-wimpy-book">
+            </div>
+            <div class="book-content">
+                <h1 class="book-title">Diary Of A Wimpy Kid - <br> Book 1 (Penguin Books UK)</h1>
+                <hr>
+                <div class="book-info">
+                    <div>
+                        <p class="author">Author</p>
+                        <p class="author-name">Jeff Kinney </p>
+                    </div>
+    
+                    <div>
+                        <p class="rating">Rating</p>
+                        <div class="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+    
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    </a>
+    
+    <a class="book-detail-page-link" href="roahd-dalhe.html">
+        <div class="book-container">
+            <div class="book-pos">
+                <img class="charlie-chocolate-img" src="img/roahld-dahle_preview_rev_1.png" alt="roahld-dahle-book">
+            </div>
+            <div class="book-content">
+                <h1 class="book-title">Charlie and the Chocolate Factory (2007)</h1>
+                <hr>
+                <div class="book-info">
+                    <div>
+                        <p class="author">Author</p>
+                        <p class="author-name">Roald Dahl </p>
+                    </div>
+    
+                    <div>
+                        <p class="rating">Rating</p>
+                        <div class="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+    
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    </a>
+    
+</div>
+
+
+<!-- This is title for each categories has the same class 'category name'      -->
+<a class="category-name-anchor" href="category(children).html"><h1 class="category-name">Middle Grade</h1></a>
+<div class="category-container">
+    <a class="book-detail-page-link" href="place-called-perfect.html">
+        <div class="book-container">
+            <div class="book-pos">
+                <img class="placed-perfect-img" src="img/place-called-perfect_preview_rev_1.png" alt="place-called-perfect-book">
+            </div>
+            <div class="book-content">
+                <h1 class="book-title">A Place Called Perfect</h1>
+                <hr>
+                <div class="book-info">
+                    <div>
+                        <p class="author">Author</p>
+                        <p class="author-name">	Helena Duggan</p>
+                    </div>
+    
+                    <div>
+                        <p class="rating">Rating</p>
+                        <div class="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    </a>
+
+    <a class="book-detail-page-link" href="the-adventure-of-sherlork-holmes.html">
+        <div class="book-container">
+            <div class="book-pos">
+                <img class="adventure-of-sherlock-holmes-img" src="img/the-adventure-of-sherlock-holmes_preview_rev_1.png" alt="adventure-of-sherlork-holmes-book">
+            </div>
+            <div class="book-content">
+                <h1 class="book-title">The Adventures of Sherlock Holmes: <br> Illustrated by David Mackintosh  <br>(Alma Junior Classics)</h1>
+                <hr>
+                <div class="book-info">
+                    <div>
+                        <p class="author">Author</p>
+                        <p class="author-name">	Sir Arthur Conan Doyle, <br> David Mackintosh </p>
+                    </div>
+    
+                    <div>
+                        <p class="rating">Rating</p>
+                        <div class="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+    
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    </a>
+
+    <a class="book-detail-page-link" href="the-thursday-murder.html">
+        <div class="book-container">
+            <div class="book-pos">
+                <img class="the-thursday-img" src="img/the-thursday-murder-club_preview_rev_1_preview_rev_1.png" alt="the-thursday-book">
+            </div>
+            <div class="book-content">
+                <h1 class="book-title">The Thursday Murder Club</h1>
+                <hr>
+                <div class="book-info">
+                    <div>
+                        <p class="author">Author</p>
+                        <p class="author-name">Richard Osman </p>
+                    </div>
+    
+                    <div>
+                        <p class="rating">Rating</p>
+                        <div class="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+    
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    </a>
+</div>
+
+<!-- This is title for each categories has the same class 'category name'      -->
+<a class="category-name-anchor" href="category(children).html"><h1 class="category-name">Picture Books</h1></a>
+<div class="category-container">
+    <a class="book-detail-page-link" href="bedtime-stories.html">
+        <div class="book-container">
+            <div class="book-pos">
+                <img class="bed-times-story-img" src="img/bedtime-stories_preview_rev_1.png" alt="bed-time-stories-book">
+            </div>
+            <div class="book-content">
+                <h1 class="book-title">Bedtime Stories</h1>
+                <hr>
+                <div class="book-info">
+                    <div>
+                        <p class="author">Author</p>
+                        <p class="author-name">	Miles Kelly</p>
+                    </div>
+    
+                    <div>
+                        <p class="rating">Rating</p>
+                        <div class="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    </a>
+
+    <a class="book-detail-page-link" href="dory-fantasmagory.html">
+        <div class="book-container">
+            <div class="book-pos">
+                <img class="dory-img" src="img/dory-fantasmagory.jpeg" alt="dory-fantasmagory-book">
+            </div>
+            <div class="book-content">
+                <h1 class="book-title">Dory Fantasmagory</h1>
+                <hr>
+                <div class="book-info">
+                    <div>
+                        <p class="author">Author</p>
+                        <p class="author-name">Abby Hanlon </p>
+                    </div>
+    
+                    <div>
+                        <p class="rating">Rating</p>
+                        <div class="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+    
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    </a>
+    
+    <a class="book-detail-page-link" href="my-first-1000-words.html">
+        <div class="book-container">
+            <div class="book-pos">
+                <img class="my-first-1000-img" src="img/my-first-1000-worda_preview_rev_1.png" alt="my-first-1000-book">
+            </div>
+            <div class="book-content">
+                <h1 class="book-title">My First 1000 Words: <br> Words To Learn And Lots To Spot</h1>
+                <hr>
+                <div class="book-info">
+                    <div>
+                        <p class="author">Author</p>
+                        <p class="author-name">Becky Miles </p>
+                    </div>
+    
+                    <div>
+                        <p class="rating">Rating</p>
+                        <div class="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+                            <img src="img/star (1).png" alt="star">
+    
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    </a>
+    
+    
+</div>
+
+
+
+
+
+      <!-- Footer section using using ul tag to put it in list  -->
+<footer>
+    <nav>
+        <ul>
+            <li> About us</li>
+            <li>Privacy Policy</li>
+            <li>Term</li>
+            <li>Copy right</li>
+            <a href="contact-page.html"><li>Contact us</li></a>
+        </ul>
+    </nav>
+   
+
+
+</footer>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Lao Vinh Khang
+ID: s3891925
+Acknowledgement: Acknowledge the resources that you use here -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+<title>Sleep in a sea of star</title>
+</head>
+<body>
+    <!-- In term of body section, I have seperated four main part, 1. 'mobile-nav-bar', 2. left-side,
+    3. middle-side and 4. right-side.  -->
+    <header>
+        <div class="header">
+            <div class="mobile-nav-bar">☰</div>
+            <!-- The 'mobile-nav-bar' using hamburger menu for mobile version -->
+            <!-- This nav bar is used for the mobile version  -->
+            <div class="nav-bar">
+                <ul>
+                    <li><a class="feature" href="index.html">Home</a></li>
+                    <li><a class="feature" href="category(non-fiction).html">Non fiction books </a></li>
+                    <li><a class="feature" href="category(children).html">Children books</a></li>
+                    <li><a class="feature" href="category(fiction).html">Fiction books</a></li>
+                </ul>
+            </div>
+
+            <!-- The left side of header, logo of 'The south bookstore' is attached -->
+            <div class="left-side">
+                <a href="index.html"><img class="bookstore-logo" src="img/bookstore-logo_preview_rev_1.png" alt="bookstore-logo">
+                </a>            
+            </div>
+
+            <!-- The middle side contains search box, inside the search box we have 2
+            small parts 'search bar' and 'search button'. Search bar creates just like
+            bar for users typing, search icon is the magnifying i attached in google  -->
+
+            <div class="middle-side">
+                <div class="search-box">
+                    <input class="search-bar" type="text" placeholder="Search by author, title, name">
+                    <button class="search-button">
+                        <img class="search-icon" src="img/search-interface-symbol.png" alt="search-icon">
+                    </button>
+                </div>
+            
+            <!-- The right side has 3 icons 'notification','shopping-cart' and 'user-account' -->
+            </div>
+            <div class="right-side">
+                    <img class="notification-icon" src="img/2_preview_rev_1.png" alt="notification-icon">
+    
+                    <img class="shopping-cart-icon" src="img/3_preview_rev_1.png" alt="shopping-cart-icon">
+    
+                    <img class="user-acc-icon" src="img/4_preview_rev_1.png" alt="user-account-icon">
+            </div>
+    
+            
+      
+
+    </header>
+
+          <!-- This nav-bar is shown in desktop version  -->
+          <div class="nav-bar1">
+            <ul>
+                <li><a class="feature1" href="index.html">Home</a></li>
+                <li><a class="feature1" href="category(non-fiction).html">Non fiction books </a></li>
+                <li><a class="feature1" href="category(children).html">Children books</a></li>
+                <li><a class="feature1" href="category(fiction).html">Fiction books</a></li>
+            </ul>
+        </div>
+</div>
+
+<ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="category(fiction).html">Fiction books</a></li>
+    <li>To Sleep In A Sea Of Stars</li>
+  </ul>
+
+
+<!-- 'main-book-detail' contains all about book details include img, content price, add to cart button and description -->
+  <div class="main-book-detail">
+    <!-- 'all-img' covers the big img ('first-img') and three small one ('remain-img') -->
+        <div class="all-img">
+            <div class="first-img">
+                <img class="category-img" src="img/to-sleep-in-a-sea-of-star_preview_rev_1.png" alt="sleep-in-sea-star-book">
+            </div>
+            <div class="remain-img">
+                <a class="img-link" href="img/to-sleep-in-a-sea-of-star_preview_rev_1.png"><img class="sub-img" src="img/to-sleep-in-a-sea-of-star_preview_rev_1.png" alt="sleep-in-sea-star-img1">
+                </a>
+                <a class="img-link" href="img/to-sleep-in-a-sea-of-star_preview_rev_1.png"><img class="sub-img" src="img/to-sleep-in-a-sea-of-star_preview_rev_1.png" alt="sleep-in-sea-star-img1">
+                </a>
+                <a class="img-link" href="img/to-sleep-in-a-sea-of-star_preview_rev_1.png"><img class="sub-img" src="img/to-sleep-in-a-sea-of-star_preview_rev_1.png" alt="sleep-in-sea-star-img1">
+                </a>
+            </div>
+        </div>
+       
+        <!-- 'book-content covers all things concerned about main information of book' -->
+        <div class="book-content">
+            <div class="book-name-author">
+                <h2 class="book-name">To Sleep In A Sea Of Stars
+                </h2>
+                <p class="author-name"> Author: Christopher Paolini
+                </p>
+            </div>
+
+            <div class="book-information">
+                <p class="publisher">Publisher: MacMillan
+                </p>
+		        <div class="dots"></div>
+                <p class="cover-form">Cover form: Hardcover</p>
+                <div class="dots"></div>
+                <div class="rating">
+                    <img src="img/star (1).png" alt="star">
+                    <img src="img/star (1).png" alt="star">
+                    <img src="img/star (1).png" alt="star">
+                    <img src="img/star (1).png" alt="star">
+                    <img src="img/star (1).png" alt="star">
+                </div>
+            </div>
+            <div class="price-product-quantity">
+                <p class="price"> $12.76</p>
+                <div class="product-quantity">
+                    <label for="qty">Quantity:</label>
+                    <div class="product-quantity-box">
+                        <img class="btn-substract-qty" src="img/minus.png" alt="minus-icon">
+                        <p class="qty">1</p>
+                        <img class="btn-plus-qty" src="img/plus.png" alt="plus-icon">
+                    </div>
+                </div>
+            </div>
+         
+          
+            <div class="cart-buy-now-btn">
+                <div class="product-add-box">
+                    <img class="shopping-cart-icon1" src="img/3_preview_rev_1.png" alt="shopping-cart-icon">
+                    <p class="add-to-cart-btn">Add to cart</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-description">
+            <p class="book-description-title">Description
+            <p>
+            <p class="book-description-abstract">
+                Now a New York Times and USA Today bestseller!
+                Winner of Best Science Fiction in the 2020 Goodreads Choice Awards!
+                To Sleep in a Sea of Stars is a brand new epic novel from #1 New York Times bestselling author of Eragon, Christopher Paolini.
+                Kira Navárez dreamed of life on new worlds.
+                Now she's awakened a nightmare.
+
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+               <li> About us</li>
+                <li>Privacy Policy</li>
+                <li>Term</li>
+                <li>Copy right</li>
+                <a href="contact-page.html"><li>Contact us</li></a>
+            </ul>
+        </nav>
+       
+    
+    
+    </footer>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,1113 @@
+/* HEADER OF ALL HTML FILE */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(6, 32, 63);
+    color: #FFF8DB;
+}
+
+
+.bookstore-logo {
+    width: 120px;
+}
+
+/* 'middle-side' sets flex and put it in the middle of headers, flex 1
+means set middle side widely  */
+.middle-side {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between; 
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+/* 'search box' contains search bar and search button
+so set the flex box to move those 2 child parts include in
+div and align them in the middle of the box  */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background-color: rgb(237, 237, 237);
+    border-radius: 4px;
+    padding: 5px;
+    color: #cfcfcf;
+    border: rgb(0, 0, 0) solid 1px;
+
+}
+
+.search-bar {
+ 
+    flex: 1;
+    padding-left: 10px;
+    font-size: 13px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: rgb(237, 237, 237);
+    color: black;
+    
+}
+
+/* 'Search bar:placeholder' is the word inside search-bar
+like hints for users to type */
+.search-bar::placeholder {
+    font-size: 12px;
+    color: rgb(165, 165, 165);
+    padding: 0;
+}
+
+.search-button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+
+  }
+
+/* 'Search icon' adjust the dimension of magnifier */
+.search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+/* set 'right side' width to 180px display flex to seperate
+icons equalise using space-around  */
+.right-side {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-shrink: 0;
+}
+
+
+/* Set the width of these icon to 25px  */
+.shopping-cart-icon ,.notification-icon,
+.user-acc-icon {
+    width: 55px;
+}
+
+
+/* 
+when hover these icon the scale is
+set to 1.2 which means the icon would
+go bigger when hovering */
+.shopping-cart-icon:hover,
+.notification-icon:hover,
+.user-acc-icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/* 
+This 'nav-bar 1' is nav bar for desktop
+version flexbox to make it all stuffs inside 
+nav-bar1 locate horizontally make it space and center
+and set the width to make it wide enough  */
+.nav-bar1 {
+    display: block;
+    width: 1000px;
+    height: 30px;
+    margin-right: 140px;
+}
+
+/* 'feature-1' is the content inside nav-bar1
+set color to rgb(6,32,63) and non text-decoration */
+.feature1 {
+    color: rgb(6, 32, 63) ;
+    text-decoration: none;
+}
+
+/* when hovering the this 'feature1' it changes to 
+underline and bold */
+.feature1:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+
+
+}
+
+
+/* set 'nav-bar1 ul' display them flex horizontally no
+style and set margin and padding to 0 */
+.nav-bar1 ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 0;
+}
+
+/* set the margin of nav-bar1 to respectively 20px
+create the space outside to make it clearer to see  */
+.nav-bar1 li {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* 'mobile-nav-bar' is set to display none when in
+desktop version */
+
+.mobile-nav-bar {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: white;
+    display: none;
+}
+
+/* 'nav-bar' using for mobile version is set
+to display none in desktop version  */
+.nav-bar {
+    display: none;
+}
+
+
+/* CONTACT PAGE 
+BREADCRUMB IN CONTACT PAGE */
+
+
+/* 'breadcrumb is set to display flex locate at the beginning of page' */
+.breadcrumb {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .breadcrumb li a {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 13px;
+    color: rgb(6, 32, 63);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
+  .breadcrumb li a:hover {
+    text-decoration: underline;
+  }
+
+
+  
+  .breadcrumb li:last-child {
+    padding-top: 3px;
+    font-size: 13px;
+    margin-left: 5px;
+    color: rgb(6,32,63);
+  }
+
+  .breadcrumb li:last-child:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumb li:last-child a {
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .breadcrumb li:not(:last-child)::after {
+    content: ">";
+    margin-left: 5px;
+    color: #999;
+  }
+
+.main-book-detail {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.category-img {
+    width: 350px;
+}
+
+.all-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.remain-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-link {
+  text-decoration: none;
+}
+
+.sub-img {
+    width: 100px;
+}
+
+.sub-img1 {
+display: flex;
+justify-content: space-between;
+width: 50px;
+margin: 0 5px 0 5px;
+}
+
+
+.diary-img {
+  width: 125px ;
+}
+
+
+.book-name {
+  margin-block-end: 0 ;
+  margin-block-start: 0;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
+.book-information {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.book-information::after {
+  content: '';
+  width: 100%;
+}
+
+
+.book-description-title {
+  font-size: 25px;
+}
+
+.book-description-abstract {
+  font-size: 14px;
+}
+
+.rating {
+  order: 1;
+}
+.publisher, .cover-form {
+  font-size: 13px ;
+  margin-top: 16px;
+  margin-right: 16px;
+}
+.price {
+  color: rgb(183, 3, 3);
+  font-size: 22px;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+strong {
+    color: red;
+}
+
+.product-quantity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.product-quantity label {
+  font-size: 15px;
+  font-weight: 650;
+  padding: 0 8px 0 0;
+  margin-bottom: 0;
+  text-align: left;
+  max-width: 200px;
+  min-width: 150px;
+}
+
+
+.product-quantity-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid #c1c1c1;
+  border-radius:4px;
+  height: 32px;
+  width: 95px;
+}
+
+.product-quantity-box .btn-substract-qty {
+  padding: 0 8px;
+  width: 32px;
+}
+
+.product-quantity-box .btn-plus-qty {
+  padding: 0 8px;
+  width: 32px;
+}
+
+
+
+.product-quantity-box .qty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.cart-buy-now-btn {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.product-add-box {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(6, 32, 63);
+  color: rgb(255, 248, 219);
+  width: 200px;
+  height: 44px;
+  border-radius: 100px;
+  margin-top: 35px;
+  font-size: 16px;
+}
+
+.add-to-cart-btn {
+  color: rgb(255, 248, 219);
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-right: 14px;
+  font-weight: 700;
+}
+
+.shopping-cart-icon1 {
+  margin-right: 6px;
+  width: 40px;
+}
+
+.book-description-title {
+  color: black; 
+  font-weight: 700; 
+  font-size: 22px;
+}
+.book-description-abstract {
+  color: black
+}
+
+
+
+.elon-musk-img {
+  width: 150px; 
+  padding: 10px 15px;
+}
+
+
+* {
+    box-sizing: border-box;
+    color: rgb(6,32,63);
+  }
+  
+.contact-us {
+    display: none;
+}
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif; 
+    font-size: 18px;
+    color: rgb(6, 32, 63);
+  }
+
+  .contact-page-img {
+    width: 30%;
+    height: 20%;
+    margin: 50px 80px 20px 20px;
+    padding: 0;
+  }
+
+  .main-contact-page {
+    display: flex;
+    justify-content: center;
+
+  }
+  form {
+    margin-top: 60px;
+  }
+  
+  
+  main form div {
+    margin-bottom: 12px;
+  
+  }
+  
+  input, textarea {
+    font-size: 12px;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif; 
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  .contact-preference,
+  .receive-weekly {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  #email-preference {
+    font-weight: none ;
+  }
+  
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
+  .submit-button,
+  .reset-button {
+    background-color: rgb(6,32,63);
+    color: #FFF8DB;
+    border: 1px solid ;
+    border-radius: 4px;
+    width: 100px;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(6, 32, 63);
+    height: 100px;
+    width: 100%;
+
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin: 0 5px;
+    list-style: none;
+    color: #FFF8DB;
+ }
+ nav ul li:hover {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+
+ } 
+ .rich-media {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+ }
+
+/* IMG OF ALL BOOKS */
+
+ .and-then-there-img,
+ .return-sherlock-holmes-img,
+ .chemical-heart-img,
+ .love-break-heart-img,
+ .night-like-this-img,
+ .dune-img,
+ .sleep-in-star-img {
+     width: 220px;
+     margin-right: 5px;
+     padding: 10px 15px;
+ }
+ 
+ .davinci-code-img {
+     width: 140px;
+     margin-right: 5px;
+     padding: 10px 15px;
+ }
+ 
+ .dory-img {
+   width : 160px;
+   margin-right: 5px;
+   padding: 10px 15px;
+ 
+ }
+ 
+ 
+ .charlie-chocolate-img, .placed-perfect-img {
+   width: 220px;
+   margin-right: 5px;
+   padding: 10px 15px;
+ }
+ 
+ .alice-adventure-img {
+   width: 140px;
+   margin-right: 5px;
+   padding: 10px 15px; 
+ }
+ .diary-wimpy-img,
+ .the-thursday-img,
+ .adventure-of-sherlock-holmes-img,
+ .bed-times-story-img,
+ .my-first-1000-img {
+   width: 220px;
+   margin-right: 5px;
+   padding: 10px 15px;  
+ }
+ 
+ .driver-life-time-img,
+ .korean-vegan-img,
+ .over-100-healthy-img{
+     width: 220px;
+     margin-right: 5px;
+     padding: 10px 15px;
+ }
+ 
+ .science-img {
+     width: 180px;
+     margin-right: 5px;
+     padding: 10px 15px;
+ 
+ }
+ 
+ .science-of-ocean-img {
+     width: 180px;
+     margin-right: 5px;
+     padding: 10px 15px;
+ }
+ 
+ .lost-cities-img {
+     width: 220px;
+     margin-right: 5px;
+     padding: 10px 15px;
+ }
+ .national-park-europe-img {
+     width: 220px;
+     margin-right: 5px;
+     padding: 10px 15px;
+ }
+
+ .category-img1 {
+    width: 250px;
+    padding: 30px 30px;
+ }
+
+
+ *  {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(6,32,63);
+  }
+/* Set all 'category name' using flexbox display in center and font color is rgb(6,32,63) */
+.category-name{
+    display: flex;
+    justify-content: center;
+    color: rgb(6, 32, 63);
+}
+
+/* set all 'category-container' display using flex box and adjust to space around */
+.category-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+/* each book-container uses flexbox, display vertically  */
+.book-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: rgb(6,32,63);
+}
+
+
+/* book position uses flexbox, its position locate in center covered by rgb(240,240,240) background color in width of 230px */
+.book-pos {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(240, 240, 240) ;
+    border-radius: 2px;
+    width: 230px;
+
+}
+
+/* As hovering book title changes to rgb(179,3,3) and also underline themselves. Importantly, the hover changes to pointer when hovering */
+.book-title:hover {
+    color: rgb(179, 3, 3);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* set img to the below width, margin and padding to make it fit inside the 'book pos' */
+.dory-img {
+    width : 160px;
+    margin-right: 5px;
+    padding: 10px 15px;
+
+}
+
+/* set img to the below width, margin and padding to make it fit inside the 'book pos' */
+.driver-life-time-img , .cooking-w-japanese-img, 
+.charlie-chocolate-img, .placed-perfect-img {
+    width: 220px;
+    margin-right: 5px;
+    padding: 10px 15px;
+}
+
+/* set img to the below width, margin and padding to make it fit inside the 'book pos' */
+.chemical-heart-img , .sea-img,
+.black-leopard-img {
+    width: 220px;
+    margin-right: 5px;
+    padding: 10px 15px;  
+}
+
+.bookstore-banner {
+    margin-top: 20px;
+}
+
+.bookstore-banner-img {
+    width: 100%;
+}
+
+.book-title {
+    font-size: 16px;
+    font-weight:500;
+}
+
+.book-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.author-name {
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+
+.author , .rating {
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-size: 10px;
+    color: rgb(96, 96, 96);
+}
+
+/* set the width of each stars to 15px */
+img {
+    width: 15px;
+}
+
+.star {
+margin-top: 0;
+}
+
+/* set black color and none text decoration to the link of each category name */
+.category-name-anchor {
+    color: black;
+    text-decoration: none;
+}
+
+/* when hovering cateogry-name is underline and bold */
+.category-name-anchor:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.book-detail-page-link {
+    text-decoration: none;
+}
+
+
+
+/* this css is use for mobile device in 'main-homepage' */
+@media only screen and (max-width: 760px) {
+
+    .category-name-anchor {
+        font-size: 80%;
+    }
+
+    /* set the 'category-container' display vertically and set padding to make it balance  */
+    .category-container {
+		flex-direction: column;
+        padding: 0px 60px;
+	}
+	
+    
+	.book-container {
+        /* width: 235px; */
+		margin-bottom: 40px;
+    color: rgb(6,32,63);
+	}
+}
+
+ 
+
+
+
+
+@media only screen and (max-width: 760px) {
+
+  .breadcrumb {
+    display: none;
+  }
+  .all-img {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .category-img {
+    display: flex;
+    width: 65%;
+    justify-content: center;
+    margin-left: 60px;
+}
+
+.category-img1 {
+    display: flex;
+    width: 65%;
+    justify-content: center;
+    margin-left: 60px;
+ }
+
+  .remain-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-link {
+    text-decoration: none;
+  }
+
+
+  .sub-img1 {
+    width: 80px;
+    margin-right: 20px;
+  }
+  .sub-img {
+    margin-right: 20px;
+    width: 60px;
+  }
+
+  .diary-img {
+    width: 95px ;
+  }
+
+
+
+  .book-name-author {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .book-name
+  {
+    margin-left: 20px;
+  }
+
+  .author-name {
+    color: rgb(110, 110, 110) ;
+  }
+
+  .book-information {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content:flex-start;
+  margin-top: 30px;
+}
+
+.book-information::after {
+  content: '';
+  width: 0;
+}
+
+  .rating {
+    margin-left: 10px;
+  }
+
+  .publisher, .cover-form {
+    font-size: 13px;
+    margin: 0;
+    color: rgb(110, 110, 110);
+  }
+  .dots {
+    display: flex;
+    align-items: center;
+  }
+  .dots::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 10px;
+  }
+
+  .dots::before {
+    margin-right: 10px;
+  }
+
+  .product-quantity label {
+    display: none;
+  }
+
+  .price-product-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .shopping-cart-icon1 {
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  .product-add-box {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(6, 32, 63);
+    color: rgb(255, 248, 219);
+    width: 245px;
+    height: 44px;
+    border-radius: 125px;
+    font-size: 18px;
+  }
+
+  .add-to-cart-btn {
+    margin: 0;
+    margin-top: 12px;
+    margin-right: 20px;
+    font-size: 20px;
+  }
+
+  .price{
+    font-size: 28px;
+  }
+
+  .product-quantity-box .qty {
+    font-size: 13px;
+  }
+
+  .elon-musk-img {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    margin-top: 0;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.main-contact-page {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+.contact-page-img {
+    width: 50%;
+    height: 20%;
+    margin: 50px 85px 20px 85px;
+    padding: 0;
+  }
+
+main form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    width: 80%;
+    height: 30%;
+}
+.rich-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+}
+
+
+
+
+
+/* Mobile version for head section  */
+@media (max-width: 850px) {
+    /* set 'nav-bar' to appear in vertically, aligns flex start */
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .nav-bar ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 0;
+        padding: 0;
+
+    }
+    /* 'features' are set none text decoration no style and font color rgb(237,237,237) */
+    .feature {
+        text-decoration: none;
+        list-style: none;
+        color: rgb(237,237,237);
+        font-size: 7px;
+    }
+
+
+
+    /* as hovering 'features' turn to underline and bold */
+    .feature:hover {
+        text-decoration: underline;
+        font-weight: bold;
+
+    }
+
+    /* 'nav-bar1' display none in mobile version */
+    .nav-bar1 {
+        display: none;
+    }
+  
+    /* set 'mobile nav-bar' displays flex locate at the beginning of page  */
+    .mobile-nav-bar {
+        display: flex;
+        justify-content: flex-start;
+        cursor: pointer;
+        background-color: rgb(6,37,63);
+        color: rgb(237, 237, 237);
+  
+  
+    }
+  
+    .header {
+        justify-content: start;
+        flex-wrap: nowrap;
+    }
+  
+    .mobile-nav-bar:hover+.nav-bar {
+        display: block;
+
+    }
+  
+    .nav-bar:hover {
+        display: block;
+
+    }
+
+  
+
+    
+
+    .bookstore-logo {
+        width: 50px;
+    }
+
+    /* the middle set is set to locate in center */
+    .middle-side {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .search-box {
+        display: flex;
+        align-items: center;
+        background-color: rgb(237,237,237);
+        border-radius: 4px;
+        padding: 0;
+        border: rgb(0, 0, 0) solid 1px;
+    
+    }
+
+    .search-icon  {
+        width: 12px;
+        height: 12px;
+        padding: 0;
+    }
+
+    .search-bar {
+ 
+        flex: 1;
+        padding: 2px;
+        font-size: 11px;
+        outline: none;
+        border: none;
+        border-radius: 3px;
+        background: transparent;
+        
+    }
+
+    .search-bar::placeholder {
+        font-size: 10px;
+    }
+
+
+    .right-side {
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .notification-icon ,
+    .shopping-cart-icon,
+    .user-acc-icon {
+        width: 30px;
+    }
+
+    .bookstore-banner {
+        display: block;
+        margin-top: 20px;
+    }
+    .bookstore-banner-img {
+        width: 100%
+    }
+}
+
+
+
+
+
+
+
+
+
+
